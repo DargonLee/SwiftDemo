@@ -13,6 +13,7 @@
 		DCA8D96124323011009EE89E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA8D95F24323011009EE89E /* Main.storyboard */; };
 		DCA8D96324323012009EE89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA8D96224323012009EE89E /* Assets.xcassets */; };
 		DCA8D96624323012009EE89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA8D96424323012009EE89E /* LaunchScreen.storyboard */; };
+		DCA8D97124338A37009EE89E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D97024338A37009EE89E /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DCA8D96224323012009EE89E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCA8D96524323012009EE89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCA8D96724323012009EE89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCA8D97024338A37009EE89E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		DCA8D96D2432305E009EE89E /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				DCA8D96F24338A1D009EE89E /* Demo1 */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -81,6 +84,14 @@
 				DCA8D96724323012009EE89E /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCA8D96F24338A1D009EE89E /* Demo1 */ = {
+			isa = PBXGroup;
+			children = (
+				DCA8D97024338A37009EE89E /* Product.swift */,
+			);
+			path = Demo1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA8D95E24323011009EE89E /* ViewController.swift in Sources */,
+				DCA8D97124338A37009EE89E /* Product.swift in Sources */,
 				DCA8D95A24323011009EE89E /* AppDelegate.swift in Sources */,
 				DCA8D95C24323011009EE89E /* SceneDelegate.swift in Sources */,
 			);
