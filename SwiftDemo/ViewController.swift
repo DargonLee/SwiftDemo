@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private let cellIdentifier: String = "tableViewCellIdentifier"
+    private var segueIdentifiers = [
+        "GoodAsOldPhones",
+        ""
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +40,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return segueIdentifiers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -47,6 +51,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        self.performSegue(withIdentifier: segueIdentifiers[indexPath.row], sender: nil)
     }
 }
 

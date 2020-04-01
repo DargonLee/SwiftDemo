@@ -14,6 +14,10 @@
 		DCA8D96324323012009EE89E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA8D96224323012009EE89E /* Assets.xcassets */; };
 		DCA8D96624323012009EE89E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA8D96424323012009EE89E /* LaunchScreen.storyboard */; };
 		DCA8D97124338A37009EE89E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D97024338A37009EE89E /* Product.swift */; };
+		DCA8D9742434D812009EE89E /* GoodAsOldPhones.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA8D9722434D812009EE89E /* GoodAsOldPhones.storyboard */; };
+		DCA8D9762434D87F009EE89E /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D9752434D87F009EE89E /* ProductViewController.swift */; };
+		DCA8D9782434D8E8009EE89E /* UsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D9772434D8E8009EE89E /* UsViewController.swift */; };
+		DCA8D97C2434D98C009EE89E /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D97B2434D98C009EE89E /* ProductsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		DCA8D96524323012009EE89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCA8D96724323012009EE89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA8D97024338A37009EE89E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DCA8D9732434D812009EE89E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "SwiftDemo/Supporting Files/Base.lproj/GoodAsOldPhones.storyboard"; sourceTree = "<group>"; };
+		DCA8D9752434D87F009EE89E /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		DCA8D9772434D8E8009EE89E /* UsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsViewController.swift; sourceTree = "<group>"; };
+		DCA8D97B2434D98C009EE89E /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 		DCA8D96E24323084009EE89E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DCA8D9722434D812009EE89E /* GoodAsOldPhones.storyboard */,
 				DCA8D95F24323011009EE89E /* Main.storyboard */,
 				DCA8D96224323012009EE89E /* Assets.xcassets */,
 				DCA8D96424323012009EE89E /* LaunchScreen.storyboard */,
@@ -90,6 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				DCA8D97024338A37009EE89E /* Product.swift */,
+				DCA8D9752434D87F009EE89E /* ProductViewController.swift */,
+				DCA8D97B2434D98C009EE89E /* ProductsTableViewController.swift */,
+				DCA8D9772434D8E8009EE89E /* UsViewController.swift */,
 			);
 			path = Demo1;
 			sourceTree = "<group>";
@@ -154,6 +166,7 @@
 			files = (
 				DCA8D96624323012009EE89E /* LaunchScreen.storyboard in Resources */,
 				DCA8D96324323012009EE89E /* Assets.xcassets in Resources */,
+				DCA8D9742434D812009EE89E /* GoodAsOldPhones.storyboard in Resources */,
 				DCA8D96124323011009EE89E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,9 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCA8D97C2434D98C009EE89E /* ProductsTableViewController.swift in Sources */,
 				DCA8D95E24323011009EE89E /* ViewController.swift in Sources */,
 				DCA8D97124338A37009EE89E /* Product.swift in Sources */,
 				DCA8D95A24323011009EE89E /* AppDelegate.swift in Sources */,
+				DCA8D9762434D87F009EE89E /* ProductViewController.swift in Sources */,
+				DCA8D9782434D8E8009EE89E /* UsViewController.swift in Sources */,
 				DCA8D95C24323011009EE89E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +205,14 @@
 				DCA8D96524323012009EE89E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCA8D9722434D812009EE89E /* GoodAsOldPhones.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCA8D9732434D812009EE89E /* Base */,
+			);
+			name = GoodAsOldPhones.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

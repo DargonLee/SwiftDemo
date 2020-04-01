@@ -36,12 +36,64 @@
                     <navigationItem key="navigationItem" id="WRs-qK-cRN"/>
                     <connections>
                         <outlet property="tableView" destination="fsS-wa-i9M" id="toV-fO-7KD"/>
-                        <segue destination="NMX-fT-8o0" kind="show" identifier="GoodAsOldPhones" id="acF-qd-KyO"/>
+                        <segue destination="m3g-tP-AcQ" kind="show" identifier="GoodAsOldPhones" id="acF-qd-KyO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-272.46376811594206" y="79.6875"/>
+        </scene>
+        <!--Us-->
+        <scene sceneID="ksG-g4-SGk">
+            <objects>
+                <viewController id="1wT-zQ-Acq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3CO-Fe-FQf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="quH-FB-dTc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Us" id="7Rt-t7-Uft"/>
+                    <navigationItem key="navigationItem" id="jkP-R0-swa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gg8-CP-fs9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-326" y="-645"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bgn-TB-YfQ">
+            <objects>
+                <viewController id="xIx-sb-3v1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g4q-UF-qos">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Ytc-iV-gww"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wwr-Sg-R6j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPl-wE-M1L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341" y="-1069"/>
+        </scene>
+        <!--GoodAsOldPhones-->
+        <scene sceneID="3aV-uE-ElT">
+            <objects>
+                <tabBarController id="m3g-tP-AcQ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="GoodAsOldPhones" id="wf2-jd-dMT"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CC4-Bh-0mx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2Rq-pe-oGT" kind="relationship" relationship="viewControllers" id="6aK-vr-Wbp"/>
+                        <segue destination="1wT-zQ-Acq" kind="relationship" relationship="viewControllers" id="MPg-k3-dYs"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lzb-hI-ixY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-997" y="-927"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8ux-C2-ltO">
@@ -61,15 +113,24 @@
             </objects>
             <point key="canvasLocation" x="-996" y="81"/>
         </scene>
-        <!--GoodAsOldPhones-->
-        <scene sceneID="fG8-oe-HTf">
+        <!--Products-->
+        <scene sceneID="w5K-PO-XMy">
             <objects>
-                <viewControllerPlaceholder storyboardName="GoodAsOldPhones" id="NMX-fT-8o0" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="9ix-QH-NjL"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kA1-rT-mJH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Rq-pe-oGT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Products" id="FUi-xw-uMY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oic-oa-4d6">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xIx-sb-3v1" kind="relationship" relationship="rootViewController" id="Bhp-PH-aTe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIp-LH-3xY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-997" y="-927"/>
+            <point key="canvasLocation" x="-325" y="-1069"/>
         </scene>
     </scenes>
 </document>
