@@ -19,10 +19,52 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Us" id="7Rt-t7-Uft"/>
                     <navigationItem key="navigationItem" id="jkP-R0-swa"/>
+                    <connections>
+                        <outlet property="scrollView" destination="AUA-OU-thj" id="Ayu-g6-HJf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gg8-CP-fs9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="AUA-OU-thj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-contact" translatesAutoresizingMaskIntoConstraints="NO" id="QyC-Bj-y2Y">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="x5v-ws-JKm"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCh-DA-0il">
+                            <rect key="frame" x="0.0" y="194" width="375" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vE7-hg-GrK">
+                            <rect key="frame" x="20" y="234" width="335" height="76.5"/>
+                            <string key="text">Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:</string>
+                            <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3ou-k4-QM8" firstAttribute="trailing" secondItem="SCh-DA-0il" secondAttribute="trailing" id="Amx-90-Cf6"/>
+                        <constraint firstItem="QyC-Bj-y2Y" firstAttribute="leading" secondItem="3ou-k4-QM8" secondAttribute="leading" id="IO6-96-zNa"/>
+                        <constraint firstItem="SCh-DA-0il" firstAttribute="top" secondItem="QyC-Bj-y2Y" secondAttribute="bottom" constant="66" id="IZj-60-c5i"/>
+                        <constraint firstItem="vE7-hg-GrK" firstAttribute="leading" secondItem="3ou-k4-QM8" secondAttribute="leading" constant="20" id="KTm-xC-uWG"/>
+                        <constraint firstItem="QyC-Bj-y2Y" firstAttribute="top" secondItem="t0Y-J6-F6V" secondAttribute="top" id="Qiv-jd-evx"/>
+                        <constraint firstItem="3ou-k4-QM8" firstAttribute="trailing" secondItem="vE7-hg-GrK" secondAttribute="trailing" constant="20" id="eXr-Pl-v7F"/>
+                        <constraint firstItem="SCh-DA-0il" firstAttribute="leading" secondItem="3ou-k4-QM8" secondAttribute="leading" id="hSz-oL-XQc"/>
+                        <constraint firstItem="3ou-k4-QM8" firstAttribute="trailing" secondItem="QyC-Bj-y2Y" secondAttribute="trailing" id="pFZ-bP-8s7"/>
+                        <constraint firstItem="vE7-hg-GrK" firstAttribute="top" secondItem="SCh-DA-0il" secondAttribute="bottom" constant="10" id="w4v-Kj-HHJ"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="3ou-k4-QM8"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="eS6-p7-nBO"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="t0Y-J6-F6V"/>
+                </scrollView>
             </objects>
-            <point key="canvasLocation" x="-326" y="-352"/>
+            <point key="canvasLocation" x="-277" y="-352"/>
         </scene>
         <!--GoodAsOldPhones-->
         <scene sceneID="3aV-uE-ElT">
@@ -35,34 +77,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="2Rq-pe-oGT" kind="relationship" relationship="viewControllers" id="6aK-vr-Wbp"/>
-                        <segue destination="1wT-zQ-Acq" kind="relationship" relationship="viewControllers" id="MPg-k3-dYs"/>
+                        <segue destination="0MW-Uw-rOg" kind="relationship" relationship="viewControllers" id="SI1-xy-Xop"/>
+                        <segue destination="1wT-zQ-Acq" kind="relationship" relationship="viewControllers" id="wRw-oh-MGT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lzb-hI-ixY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-997" y="-927"/>
         </scene>
-        <!--Products-->
-        <scene sceneID="w5K-PO-XMy">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Rq-pe-oGT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Products" id="FUi-xw-uMY"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oic-oa-4d6">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0MW-Uw-rOg" kind="relationship" relationship="rootViewController" id="fa1-UH-xVP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eIp-LH-3xY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-325" y="-1069"/>
-        </scene>
-        <!--Products Table View Controller-->
+        <!--Product-->
         <scene sceneID="PlW-4W-qb1">
             <objects>
                 <tableViewController id="0MW-Uw-rOg" customClass="ProductsTableViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,13 +94,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="u3i-85-PV0">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="u3i-85-PV0">
+                                <rect key="frame" x="0.0" y="28" width="414" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u3i-85-PV0" id="xkD-ZB-qiD">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Crx-dB-5yl" kind="show" identifier="showProduct" id="gXI-Nk-xrG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -85,30 +111,55 @@
                             <outlet property="delegate" destination="0MW-Uw-rOg" id="H44-q7-rjq"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Product" id="XkV-yN-fmj"/>
                     <navigationItem key="navigationItem" id="4Fo-gg-rtX"/>
-                    <connections>
-                        <segue destination="Crx-dB-5yl" kind="show" id="oId-Y9-juH"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9w-fd-46e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="426" y="-1069"/>
+            <point key="canvasLocation" x="424.63768115942031" y="-1069.4196428571429"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="dGq-Ac-Wl0">
             <objects>
                 <viewController id="Crx-dB-5yl" customClass="ProductViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hov-8B-bMa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eVi-9O-C1D">
+                                <rect key="frame" x="0.0" y="-20" width="414" height="828"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNr-iX-PF1">
+                                <rect key="frame" x="0.0" y="200" width="414" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eNr-iX-PF1" firstAttribute="leading" secondItem="Uil-KK-DeV" secondAttribute="leading" id="BAR-zx-qVp"/>
+                            <constraint firstItem="Uil-KK-DeV" firstAttribute="trailing" secondItem="eNr-iX-PF1" secondAttribute="trailing" id="Biv-97-1jB"/>
+                            <constraint firstItem="eVi-9O-C1D" firstAttribute="leading" secondItem="Uil-KK-DeV" secondAttribute="leading" id="LJv-eG-VuB"/>
+                            <constraint firstItem="Uil-KK-DeV" firstAttribute="bottom" secondItem="eVi-9O-C1D" secondAttribute="bottom" id="RjY-AM-KVC"/>
+                            <constraint firstItem="Uil-KK-DeV" firstAttribute="trailing" secondItem="eVi-9O-C1D" secondAttribute="trailing" id="V70-TB-b6k"/>
+                            <constraint firstItem="eVi-9O-C1D" firstAttribute="top" secondItem="Uil-KK-DeV" secondAttribute="top" constant="-20" id="iH6-je-xO1"/>
+                            <constraint firstItem="eNr-iX-PF1" firstAttribute="top" secondItem="Uil-KK-DeV" secondAttribute="top" constant="200" id="qCF-DC-Edv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uil-KK-DeV"/>
                     </view>
                     <navigationItem key="navigationItem" id="FMy-Ee-kqy"/>
+                    <connections>
+                        <outlet property="productImageView" destination="eVi-9O-C1D" id="xLH-ia-Ixh"/>
+                        <outlet property="productNameLabel" destination="eNr-iX-PF1" id="IcK-vm-8gY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUg-wO-A3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1161" y="-1069"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="header-contact" width="375" height="125"/>
+    </resources>
 </document>

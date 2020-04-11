@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private let cellIdentifier: String = "tableViewCellIdentifier"
+    private let cellIdentifier = "tableViewCellIdentifier"
     private var segueIdentifiers = [
         "GoodAsOldPhones",
         ""
@@ -25,11 +25,11 @@ class ViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let identifier = segue.identifier {
-            print(identifier)
-        }
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let identifier = segue.identifier {
+//            print(identifier)
+//        }
+//    }
 
 }
 
@@ -45,7 +45,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell.init(style: .default, reuseIdentifier: cellIdentifier)
-        cell.textLabel?.text = "Swift Demo " + String(indexPath.row)
+        cell.textLabel?.text = "Swift Demo \(indexPath.row)"
         return cell
     }
     
