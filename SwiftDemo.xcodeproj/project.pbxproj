@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC77EC5924431EB9001E1B7C /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC5824431EB9001E1B7C /* StopWatchViewController.swift */; };
+		DC77EC5C24431F07001E1B7C /* StopWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC77EC5A24431F07001E1B7C /* StopWatch.storyboard */; };
 		DCA8D95A24323011009EE89E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95924323011009EE89E /* AppDelegate.swift */; };
 		DCA8D95C24323011009EE89E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95B24323011009EE89E /* SceneDelegate.swift */; };
 		DCA8D95E24323011009EE89E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95D24323011009EE89E /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC77EC5824431EB9001E1B7C /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
+		DC77EC5B24431F07001E1B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "SwiftDemo/Supporting Files/Base.lproj/StopWatch.storyboard"; sourceTree = "<group>"; };
 		DCA8D95624323011009EE89E /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA8D95924323011009EE89E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA8D95B24323011009EE89E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC77EC5724431E84001E1B7C /* Demo2 */ = {
+			isa = PBXGroup;
+			children = (
+				DC77EC5824431EB9001E1B7C /* StopWatchViewController.swift */,
+			);
+			path = Demo2;
+			sourceTree = "<group>";
+		};
 		DCA8D94D24323011009EE89E = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +90,7 @@
 		DCA8D96D2432305E009EE89E /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				DC77EC5724431E84001E1B7C /* Demo2 */,
 				DCA8D96F24338A1D009EE89E /* Demo1 */,
 			);
 			path = Demos;
@@ -86,6 +99,7 @@
 		DCA8D96E24323084009EE89E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC77EC5A24431F07001E1B7C /* StopWatch.storyboard */,
 				DCA8D9722434D812009EE89E /* GoodAsOldPhones.storyboard */,
 				DCA8D95F24323011009EE89E /* Main.storyboard */,
 				DCA8D96224323012009EE89E /* Assets.xcassets */,
@@ -165,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA8D96624323012009EE89E /* LaunchScreen.storyboard in Resources */,
+				DC77EC5C24431F07001E1B7C /* StopWatch.storyboard in Resources */,
 				DCA8D96324323012009EE89E /* Assets.xcassets in Resources */,
 				DCA8D9742434D812009EE89E /* GoodAsOldPhones.storyboard in Resources */,
 				DCA8D96124323011009EE89E /* Main.storyboard in Resources */,
@@ -182,6 +197,7 @@
 				DCA8D95E24323011009EE89E /* ViewController.swift in Sources */,
 				DCA8D97124338A37009EE89E /* Product.swift in Sources */,
 				DCA8D95A24323011009EE89E /* AppDelegate.swift in Sources */,
+				DC77EC5924431EB9001E1B7C /* StopWatchViewController.swift in Sources */,
 				DCA8D9762434D87F009EE89E /* ProductViewController.swift in Sources */,
 				DCA8D9782434D8E8009EE89E /* UsViewController.swift in Sources */,
 				DCA8D95C24323011009EE89E /* SceneDelegate.swift in Sources */,
@@ -191,6 +207,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DC77EC5A24431F07001E1B7C /* StopWatch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC77EC5B24431F07001E1B7C /* Base */,
+			);
+			name = StopWatch.storyboard;
+			sourceTree = "<group>";
+		};
 		DCA8D95F24323011009EE89E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

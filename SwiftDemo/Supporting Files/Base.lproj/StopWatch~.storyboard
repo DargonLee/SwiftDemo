@@ -37,12 +37,28 @@
                     <connections>
                         <outlet property="tableView" destination="fsS-wa-i9M" id="toV-fO-7KD"/>
                         <segue destination="NMX-fT-8o0" kind="show" identifier="GoodAsOldPhones" id="acF-qd-KyO"/>
-                        <segue destination="AtH-oy-KOW" kind="show" identifier="Stopwatch" id="BXR-5d-tgi"/>
+                        <segue destination="Jex-OI-f5V" kind="show" id="BXR-5d-tgi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-272.46376811594206" y="79.6875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Sa-i9-frf">
+            <objects>
+                <viewController id="Jex-OI-f5V" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hiT-yO-n1Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ysc-Zh-Qzh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ofd-jz-RdV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7yV-Cy-Xpd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8ux-C2-ltO">
@@ -71,16 +87,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kA1-rT-mJH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-997" y="-927"/>
-        </scene>
-        <!--StopWatch-->
-        <scene sceneID="LQl-5s-7RW">
-            <objects>
-                <viewControllerPlaceholder storyboardName="StopWatch" id="AtH-oy-KOW" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="4tj-AJ-1Et"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1EZ-mw-jOt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="987" y="188"/>
         </scene>
     </scenes>
 </document>
