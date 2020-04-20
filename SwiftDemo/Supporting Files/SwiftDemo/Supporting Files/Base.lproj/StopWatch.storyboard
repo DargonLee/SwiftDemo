@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stop Watch View Controller-->
         <scene sceneID="5Sa-i9-frf">
             <objects>
-                <viewController id="Jex-OI-f5V" sceneMemberID="viewController">
+                <viewController id="Jex-OI-f5V" customClass="StopWatchViewController" customModule="SwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hiT-yO-n1Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,52 +41,81 @@
                                     <constraint firstItem="Vp4-p5-x84" firstAttribute="centerY" secondItem="qM9-Pm-pJg" secondAttribute="centerY" id="z9f-NO-T4I"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oUR-zx-3zB">
-                                <rect key="frame" x="0.0" y="209" width="414" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="oUR-zx-3zB">
+                                <rect key="frame" x="77" y="209" width="260" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avU-jY-Go0">
-                                        <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="avU-jY-Go0" secondAttribute="height" multiplier="1:1" id="ezu-hT-AMP"/>
+                                            <constraint firstAttribute="height" constant="80" id="r66-7l-ZZu"/>
+                                        </constraints>
                                         <state key="normal" title="Lap"/>
+                                        <connections>
+                                            <action selector="latResetTimer:" destination="Jex-OI-f5V" eventType="touchUpInside" id="6Ao-cV-btp"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0T-74-18L">
-                                        <rect key="frame" x="207" y="0.0" width="207" height="30"/>
+                                        <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="KtE-8h-WNW"/>
+                                            <constraint firstAttribute="width" secondItem="q0T-74-18L" secondAttribute="height" multiplier="1:1" id="cAb-kA-NqL"/>
+                                        </constraints>
                                         <state key="normal" title="Start">
                                             <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="playPauseTimer:" destination="Jex-OI-f5V" eventType="touchUpInside" id="1Nk-Fb-TUI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1eg-HL-t8I"/>
+                                </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hir-GO-mCH">
-                                <rect key="frame" x="0.0" y="259" width="414" height="603"/>
+                                <rect key="frame" x="0.0" y="309" width="414" height="553"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="sectionIndexBackgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="103" id="N2n-M6-HOg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lapCell" rowHeight="103" id="N2n-M6-HOg">
                                         <rect key="frame" x="0.0" y="28" width="414" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N2n-M6-HOg" id="W6W-Rw-F2E">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jex-OI-f5V" id="9HA-MJ-GNd"/>
+                                    <outlet property="delegate" destination="Jex-OI-f5V" id="e8Y-sz-uSW"/>
+                                </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qM9-Pm-pJg" firstAttribute="trailing" secondItem="ysc-Zh-Qzh" secondAttribute="trailing" id="5Ix-m2-NXh"/>
-                            <constraint firstItem="ysc-Zh-Qzh" firstAttribute="trailing" secondItem="oUR-zx-3zB" secondAttribute="trailing" id="B5K-vf-580"/>
                             <constraint firstItem="hir-GO-mCH" firstAttribute="leading" secondItem="ysc-Zh-Qzh" secondAttribute="leading" id="M3M-hK-qON"/>
                             <constraint firstItem="hir-GO-mCH" firstAttribute="top" secondItem="oUR-zx-3zB" secondAttribute="bottom" constant="20" id="MTR-GV-nQd"/>
+                            <constraint firstItem="oUR-zx-3zB" firstAttribute="centerX" secondItem="hiT-yO-n1Q" secondAttribute="centerX" id="Njp-gy-gQo"/>
                             <constraint firstItem="ysc-Zh-Qzh" firstAttribute="trailing" secondItem="hir-GO-mCH" secondAttribute="trailing" id="SGR-hM-7bc"/>
                             <constraint firstItem="qM9-Pm-pJg" firstAttribute="leading" secondItem="ysc-Zh-Qzh" secondAttribute="leading" id="XtO-mu-qGB"/>
                             <constraint firstItem="qM9-Pm-pJg" firstAttribute="top" secondItem="ysc-Zh-Qzh" secondAttribute="top" id="buJ-md-mqC"/>
-                            <constraint firstItem="oUR-zx-3zB" firstAttribute="leading" secondItem="ysc-Zh-Qzh" secondAttribute="leading" id="o4N-ht-M3W"/>
                             <constraint firstItem="ysc-Zh-Qzh" firstAttribute="bottom" secondItem="hir-GO-mCH" secondAttribute="bottom" id="pso-iD-8dP"/>
                             <constraint firstItem="oUR-zx-3zB" firstAttribute="top" secondItem="qM9-Pm-pJg" secondAttribute="bottom" constant="15" id="wI9-mT-8Y8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ysc-Zh-Qzh"/>
                     </view>
                     <navigationItem key="navigationItem" id="ofd-jz-RdV"/>
+                    <connections>
+                        <outlet property="lapRestButton" destination="avU-jY-Go0" id="526-EF-Q1J"/>
+                        <outlet property="lapTimerLabel" destination="TRP-C0-hiH" id="UNY-P1-t8d"/>
+                        <outlet property="lapsTableView" destination="hir-GO-mCH" id="rdk-XG-WGV"/>
+                        <outlet property="playPauseButton" destination="q0T-74-18L" id="Abv-jy-1bU"/>
+                        <outlet property="timerLabel" destination="Vp4-p5-x84" id="kjc-BU-LkZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yV-Cy-Xpd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

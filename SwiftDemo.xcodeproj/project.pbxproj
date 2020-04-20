@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DC77EC5924431EB9001E1B7C /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC5824431EB9001E1B7C /* StopWatchViewController.swift */; };
 		DC77EC5C24431F07001E1B7C /* StopWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC77EC5A24431F07001E1B7C /* StopWatch.storyboard */; };
+		DC77EC5E2444AF8D001E1B7C /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC5D2444AF8D001E1B7C /* Stopwatch.swift */; };
 		DCA8D95A24323011009EE89E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95924323011009EE89E /* AppDelegate.swift */; };
 		DCA8D95C24323011009EE89E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95B24323011009EE89E /* SceneDelegate.swift */; };
 		DCA8D95E24323011009EE89E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95D24323011009EE89E /* ViewController.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		DC77EC5824431EB9001E1B7C /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		DC77EC5B24431F07001E1B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "SwiftDemo/Supporting Files/Base.lproj/StopWatch.storyboard"; sourceTree = "<group>"; };
+		DC77EC5D2444AF8D001E1B7C /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
 		DCA8D95624323011009EE89E /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA8D95924323011009EE89E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA8D95B24323011009EE89E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				DC77EC5824431EB9001E1B7C /* StopWatchViewController.swift */,
+				DC77EC5D2444AF8D001E1B7C /* Stopwatch.swift */,
 			);
 			path = Demo2;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				DCA8D95E24323011009EE89E /* ViewController.swift in Sources */,
 				DCA8D97124338A37009EE89E /* Product.swift in Sources */,
 				DCA8D95A24323011009EE89E /* AppDelegate.swift in Sources */,
+				DC77EC5E2444AF8D001E1B7C /* Stopwatch.swift in Sources */,
 				DC77EC5924431EB9001E1B7C /* StopWatchViewController.swift in Sources */,
 				DCA8D9762434D87F009EE89E /* ProductViewController.swift in Sources */,
 				DCA8D9782434D8E8009EE89E /* UsViewController.swift in Sources */,
