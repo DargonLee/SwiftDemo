@@ -38,6 +38,7 @@
                         <outlet property="tableView" destination="fsS-wa-i9M" id="toV-fO-7KD"/>
                         <segue destination="NMX-fT-8o0" kind="show" identifier="GoodAsOldPhones" id="acF-qd-KyO"/>
                         <segue destination="AtH-oy-KOW" kind="show" identifier="Stopwatch" id="BXR-5d-tgi"/>
+                        <segue destination="1ud-uw-xrJ" kind="show" identifier="FacebookMe" id="dxZ-gO-Rb8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -81,6 +82,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1EZ-mw-jOt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="987" y="188"/>
+        </scene>
+        <!--FacebookMe-->
+        <scene sceneID="6jc-RR-mnv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FacebookMe" id="1ud-uw-xrJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5bB-HY-Eqn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNg-Ql-1K3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="579"/>
         </scene>
     </scenes>
 </document>

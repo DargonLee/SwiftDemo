@@ -10,6 +10,13 @@
 		DC77EC5924431EB9001E1B7C /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC5824431EB9001E1B7C /* StopWatchViewController.swift */; };
 		DC77EC5C24431F07001E1B7C /* StopWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC77EC5A24431F07001E1B7C /* StopWatch.storyboard */; };
 		DC77EC5E2444AF8D001E1B7C /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC5D2444AF8D001E1B7C /* Stopwatch.swift */; };
+		DC77EC652451CAB6001E1B7C /* FBTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC642451CAB6001E1B7C /* FBTableViewController.swift */; };
+		DC77EC672451CAE4001E1B7C /* FBMeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC662451CAE4001E1B7C /* FBMeUser.swift */; };
+		DC77EC692451CB93001E1B7C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC682451CB93001E1B7C /* UIColor+Extension.swift */; };
+		DC77EC6C2451CCBF001E1B7C /* FacebookMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC77EC6A2451CCBF001E1B7C /* FacebookMe.storyboard */; };
+		DC77EC6E2451CCFB001E1B7C /* Specs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC6D2451CCFB001E1B7C /* Specs.swift */; };
+		DC77EC702455CEDA001E1B7C /* TableKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC6F2455CEDA001E1B7C /* TableKeys.swift */; };
+		DC77EC72245721A5001E1B7C /* FBMeBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC77EC71245721A5001E1B7C /* FBMeBaseCell.swift */; };
 		DCA8D95A24323011009EE89E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95924323011009EE89E /* AppDelegate.swift */; };
 		DCA8D95C24323011009EE89E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95B24323011009EE89E /* SceneDelegate.swift */; };
 		DCA8D95E24323011009EE89E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA8D95D24323011009EE89E /* ViewController.swift */; };
@@ -27,6 +34,13 @@
 		DC77EC5824431EB9001E1B7C /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		DC77EC5B24431F07001E1B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "SwiftDemo/Supporting Files/Base.lproj/StopWatch.storyboard"; sourceTree = "<group>"; };
 		DC77EC5D2444AF8D001E1B7C /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		DC77EC642451CAB6001E1B7C /* FBTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBTableViewController.swift; sourceTree = "<group>"; };
+		DC77EC662451CAE4001E1B7C /* FBMeUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeUser.swift; sourceTree = "<group>"; };
+		DC77EC682451CB93001E1B7C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DC77EC6B2451CCBF001E1B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "SwiftDemo/Supporting Files/Base.lproj/FacebookMe.storyboard"; sourceTree = "<group>"; };
+		DC77EC6D2451CCFB001E1B7C /* Specs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specs.swift; sourceTree = "<group>"; };
+		DC77EC6F2455CEDA001E1B7C /* TableKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableKeys.swift; sourceTree = "<group>"; };
+		DC77EC71245721A5001E1B7C /* FBMeBaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FBMeBaseCell.swift; sourceTree = "<group>"; };
 		DCA8D95624323011009EE89E /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA8D95924323011009EE89E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA8D95B24323011009EE89E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +76,51 @@
 			path = Demo2;
 			sourceTree = "<group>";
 		};
+		DC77EC5F244F3572001E1B7C /* Demo3 */ = {
+			isa = PBXGroup;
+			children = (
+				DC77EC632451CA12001E1B7C /* Model */,
+				DC77EC622451CA0A001E1B7C /* View */,
+				DC77EC612451C9FD001E1B7C /* ViewController */,
+				DC77EC602451C9F3001E1B7C /* Helper */,
+			);
+			path = Demo3;
+			sourceTree = "<group>";
+		};
+		DC77EC602451C9F3001E1B7C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DC77EC682451CB93001E1B7C /* UIColor+Extension.swift */,
+				DC77EC6D2451CCFB001E1B7C /* Specs.swift */,
+				DC77EC6F2455CEDA001E1B7C /* TableKeys.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DC77EC612451C9FD001E1B7C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DC77EC642451CAB6001E1B7C /* FBTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DC77EC622451CA0A001E1B7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC77EC71245721A5001E1B7C /* FBMeBaseCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC77EC632451CA12001E1B7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC77EC662451CAE4001E1B7C /* FBMeUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DCA8D94D24323011009EE89E = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +152,7 @@
 		DCA8D96D2432305E009EE89E /* Demos */ = {
 			isa = PBXGroup;
 			children = (
+				DC77EC5F244F3572001E1B7C /* Demo3 */,
 				DC77EC5724431E84001E1B7C /* Demo2 */,
 				DCA8D96F24338A1D009EE89E /* Demo1 */,
 			);
@@ -102,6 +162,7 @@
 		DCA8D96E24323084009EE89E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DC77EC6A2451CCBF001E1B7C /* FacebookMe.storyboard */,
 				DC77EC5A24431F07001E1B7C /* StopWatch.storyboard */,
 				DCA8D9722434D812009EE89E /* GoodAsOldPhones.storyboard */,
 				DCA8D95F24323011009EE89E /* Main.storyboard */,
@@ -181,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC77EC6C2451CCBF001E1B7C /* FacebookMe.storyboard in Resources */,
 				DCA8D96624323012009EE89E /* LaunchScreen.storyboard in Resources */,
 				DC77EC5C24431F07001E1B7C /* StopWatch.storyboard in Resources */,
 				DCA8D96324323012009EE89E /* Assets.xcassets in Resources */,
@@ -196,15 +258,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC77EC702455CEDA001E1B7C /* TableKeys.swift in Sources */,
+				DC77EC672451CAE4001E1B7C /* FBMeUser.swift in Sources */,
 				DCA8D97C2434D98C009EE89E /* ProductsTableViewController.swift in Sources */,
+				DC77EC6E2451CCFB001E1B7C /* Specs.swift in Sources */,
 				DCA8D95E24323011009EE89E /* ViewController.swift in Sources */,
+				DC77EC692451CB93001E1B7C /* UIColor+Extension.swift in Sources */,
 				DCA8D97124338A37009EE89E /* Product.swift in Sources */,
+				DC77EC652451CAB6001E1B7C /* FBTableViewController.swift in Sources */,
 				DCA8D95A24323011009EE89E /* AppDelegate.swift in Sources */,
 				DC77EC5E2444AF8D001E1B7C /* Stopwatch.swift in Sources */,
 				DC77EC5924431EB9001E1B7C /* StopWatchViewController.swift in Sources */,
 				DCA8D9762434D87F009EE89E /* ProductViewController.swift in Sources */,
 				DCA8D9782434D8E8009EE89E /* UsViewController.swift in Sources */,
 				DCA8D95C24323011009EE89E /* SceneDelegate.swift in Sources */,
+				DC77EC72245721A5001E1B7C /* FBMeBaseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +285,14 @@
 				DC77EC5B24431F07001E1B7C /* Base */,
 			);
 			name = StopWatch.storyboard;
+			sourceTree = "<group>";
+		};
+		DC77EC6A2451CCBF001E1B7C /* FacebookMe.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC77EC6B2451CCBF001E1B7C /* Base */,
+			);
+			name = FacebookMe.storyboard;
 			sourceTree = "<group>";
 		};
 		DCA8D95F24323011009EE89E /* Main.storyboard */ = {

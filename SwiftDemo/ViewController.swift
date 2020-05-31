@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     private let cellIdentifier = "tableViewCellIdentifier"
     private var segueIdentifiers = [
         "GoodAsOldPhones",
-        "Stopwatch"
+        "Stopwatch",
+        "FacebookMe"
     ]
     
     override func viewDidLoad() {
